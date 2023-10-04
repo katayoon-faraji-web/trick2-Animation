@@ -1,0 +1,556 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  animation-name: night;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+main > * {
+  position: absolute;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+main > .mountain1, main > .mountain2, main > .jungle1, main > .jungle2 {
+  width: 100%;
+  height: 450px;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  z-index: 1;
+}
+main > .mountain1 {
+  background-image: url(mountain1.png);
+  animation-name: mountain1;
+}
+main > .mountain2 {
+  background-image: url(monutain2.png);
+  animation-name: mountain2;
+}
+main > .jungle1 {
+  background-image: url(jungle1.png);
+  animation-name: jungle1;
+}
+main > .jungle2 {
+  background-image: url(jungle2.png);
+  animation-name: jungle2;
+}
+main > .sun {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: gold;
+  box-shadow: 0 0 50px 50px bisque;
+  animation-name: sun;
+}
+main > .cloud1, main > .cloud2, main > .cloud3 {
+  width: 600px;
+  height: 200px;
+  top: 200px;
+}
+main > .cloud1 > figure, main > .cloud2 > figure, main > .cloud3 > figure {
+  width: 100%;
+  height: 70%;
+}
+main > .cloud1 > figure > img, main > .cloud2 > figure > img, main > .cloud3 > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .cloud1 {
+  top: 100px;
+  animation-name: cloud1;
+}
+main > .cloud2 {
+  top: 250px;
+  animation-name: cloud2;
+}
+main > .cloud3 {
+  width: 800px;
+  top: 0;
+  animation-name: cloud3;
+}
+main > .oghab1, main > .oghab2 {
+  position: absolute;
+  z-index: 1;
+}
+main > .oghab1 {
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  background-image: url(oghab1.png);
+  background-size: cover;
+  animation-name: oghab1;
+}
+main > .oghab2 {
+  width: 400px;
+  height: 400px;
+  background-image: url(oghab2.png);
+  background-size: cover;
+  animation-name: oghab2;
+}
+main > .moon {
+  bottom: 0;
+  opacity: 0;
+  left: 35%;
+  animation-name: moon;
+}
+main > .moon > figure {
+  width: 200px;
+  overflow: hidden;
+}
+main > .moon > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .stars {
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-image: url(star2.png);
+  background-size: cover;
+  animation-name: stars;
+}
+main > .GN {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  animation-name: GN;
+}
+main > .GN > strong {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 50px 10px bisque;
+  font-family: cursive;
+}
+
+@keyframes mountain1 {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+  15% {
+    bottom: 0;
+    left: 0;
+  }
+  30% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: -100%;
+  }
+}
+@keyframes mountain2 {
+  0% {
+    bottom: -100%;
+    left: 0;
+  }
+  20% {
+    bottom: -100%;
+    left: 0;
+  }
+  38% {
+    bottom: -20%;
+  }
+  80% {
+    bottom: -20%;
+  }
+  100% {
+    bottom: -100%;
+  }
+}
+@keyframes jungle1 {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+  20% {
+    bottom: 0;
+    left: 0;
+  }
+  35% {
+    bottom: -100%;
+  }
+  50% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: -100%;
+  }
+}
+@keyframes jungle2 {
+  0% {
+    bottom: -100%;
+    left: 0;
+  }
+  20% {
+    bottom: -100%;
+    left: 0;
+  }
+  25% {
+    bottom: 0;
+  }
+  80% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes cloud1 {
+  0% {
+    left: -100%;
+  }
+  10% {
+    left: 0;
+  }
+  20% {
+    left: 150px;
+  }
+  30% {
+    left: 300px;
+  }
+  40% {
+    left: 500px;
+  }
+  50% {
+    left: 700px;
+  }
+  60% {
+    left: 500px;
+  }
+  70% {
+    left: 750px;
+  }
+  80% {
+    left: 900;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes cloud2 {
+  0% {
+    left: 100%;
+  }
+  10% {
+    left: 900px;
+  }
+  20% {
+    left: 700px;
+  }
+  30% {
+    left: 400px;
+  }
+  40% {
+    left: 200px;
+  }
+  50% {
+    left: 500px;
+  }
+  60% {
+    left: 700px;
+  }
+  70% {
+    left: 900px;
+  }
+  80% {
+    left: 950px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes cloud3 {
+  0% {
+    left: 90%;
+  }
+  10% {
+    left: 800px;
+  }
+  20% {
+    left: 600px;
+  }
+  30% {
+    left: 600px;
+  }
+  40% {
+    left: 400px;
+  }
+  50% {
+    left: 250px;
+  }
+  60% {
+    left: 100px;
+  }
+  70% {
+    left: 50px;
+  }
+  80% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes sun {
+  0% {
+    top: -100%;
+    left: calc(50% - 100px);
+  }
+  2% {
+    top: -100%;
+    left: calc(50% - 100px);
+  }
+  10% {
+    top: 200px;
+  }
+  10% {
+    top: 200px;
+    transform: scale(1.5);
+    box-shadow: 0 0 50px 10px gold;
+  }
+  20% {
+    top: 300px;
+    transform: scale(2);
+    box-shadow: 0 0 50px 20px gold;
+  }
+  30% {
+    top: 400px;
+    transform: scale(2.5);
+    box-shadow: 0 0 50px 30px gold;
+  }
+  40% {
+    top: 500px;
+    transform: scale(3);
+    box-shadow: 0 0 50px 40px gold;
+  }
+  50% {
+    top: 500px;
+    transform: scale(3.5);
+    box-shadow: 0 0 50px 50px rgb(250, 88, 34);
+  }
+  60% {
+    top: 550px;
+    transform: scale(4);
+    box-shadow: 0 0 50px 50px rgb(250, 88, 34);
+  }
+  70% {
+    top: 650px;
+    transform: scale(4);
+    box-shadow: 0 0 50px 50px rgb(250, 88, 34);
+  }
+  80% {
+    top: 1000px;
+    transform: scale(4);
+    box-shadow: 0 0 50px 50px rgb(250, 88, 34);
+  }
+  100% {
+    top: 2000px;
+    transform: scale(4);
+    box-shadow: 0 0 50px 50px rgb(250, 88, 34);
+  }
+}
+@keyframes oghab1 {
+  0% {
+    bottom: -100%;
+    left: -100%;
+  }
+  15% {
+    bottom: 0;
+    left: 0;
+  }
+  20% {
+    bottom: 200px;
+    left: 400px;
+  }
+  25% {
+    bottom: 400px;
+    left: 600px;
+  }
+  30% {
+    bottom: 600px;
+    left: 800px;
+  }
+  35% {
+    bottom: 800px;
+    left: 1000px;
+  }
+  40% {
+    bottom: 1000px;
+    left: 1200px;
+  }
+  45% {
+    bottom: 1200px;
+    left: 1400px;
+  }
+  50% {
+    bottom: 1400px;
+    left: 1600px;
+  }
+  100% {
+    bottom: 100%;
+    left: 100%;
+  }
+}
+@keyframes oghab2 {
+  0% {
+    bottom: -20%;
+    right: -30%;
+  }
+  10% {
+    bottom: 0;
+    right: 0;
+    transform: rotateZ(-25deg);
+  }
+  20% {
+    bottom: 10%;
+    right: 20%;
+    transform: rotateZ(-30deg);
+  }
+  30% {
+    bottom: 20%;
+    right: 30%;
+    transform: rotateZ(-25deg);
+  }
+  40% {
+    bottom: 30%;
+    right: 40%;
+    transform: rotateZ(-30deg);
+  }
+  50% {
+    bottom: 40%;
+    right: 50%;
+    transform: rotateZ(-30deg);
+  }
+  60% {
+    bottom: 50%;
+    right: 60%;
+    transform: rotateZ(-25deg);
+  }
+  70% {
+    bottom: 60%;
+    right: 70%;
+    transform: rotateZ(-25deg);
+  }
+  80% {
+    bottom: 70%;
+    right: 80%;
+    transform: rotateZ(-30deg);
+  }
+  90% {
+    bottom: 80%;
+    right: 90%;
+    transform: rotateZ(-30deg);
+  }
+  100% {
+    bottom: 100%;
+    right: 100%;
+    transform: rotateZ(-25deg);
+  }
+}
+@keyframes night {
+  0% {
+    background-color: bisque;
+  }
+  20% {
+    background-color: pink;
+  }
+  40% {
+    background-color: rgb(190, 107, 121);
+  }
+  70% {
+    background-color: rgb(35, 35, 99);
+  }
+  80% {
+    background-color: rgb(29, 29, 58);
+  }
+  80% {
+    background-color: rgb(25, 25, 45);
+  }
+  100% {
+    background-color: rgb(26, 26, 48);
+  }
+}
+@keyframes moon {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  80% {
+    bottom: 0;
+    opacity: 0;
+  }
+  85% {
+    bottom: 55%;
+    opacity: 1;
+  }
+  100% {
+    bottom: 55%;
+    opacity: 1;
+  }
+}
+@keyframes stars {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes GN {
+  0% {
+    bottom: -100%;
+    opacity: 0;
+  }
+  85% {
+    bottom: 50%;
+    opacity: 0;
+  }
+  90% {
+    bottom: 65%;
+    opacity: 1;
+  }
+  100% {
+    bottom: 70%;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=master.css.map */
