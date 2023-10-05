@@ -7,7 +7,7 @@ https://github.com/katayoon-faraji-web/trick2/assets/144775981/099da281-2108-45b
 
 - 🗓️Created - 2023-10
 
-- 💻Technologies Used - Html , css ,Saa
+- 💻Technologies Used - Html , Css ,Css3 , Animation ,Sass
 
 - Role - Frontend
 
