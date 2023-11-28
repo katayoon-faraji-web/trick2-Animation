@@ -1,7 +1,7 @@
-# trick2
+# trick2-Animation
 https://github.com/katayoon-faraji-web/trick2/assets/144775981/099da281-2108-45b8-a81f-aff4aa798cfe
 
-- [Demo Project](https://katayoon-faraji-web.github.io/trick2/)
+- [Demo Project](https://katayoon-faraji-web.github.io/trick2-Animation/)
 
 - Developed by katayoon faraji
 
